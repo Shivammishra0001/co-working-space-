@@ -76,6 +76,11 @@
             outline: none;
             box-shadow: 0 0 10px rgba(0, 243, 255, 0.3);
         }
+        input[type="date"]::-webkit-calendar-picker-indicator {
+            filter: invert(1) brightness(1.2);
+            cursor: pointer;
+            opacity: 0.9;
+        }
         .hidden-section {
             display: none;
         }
@@ -185,7 +190,6 @@
                 <div class="hidden md:flex items-center gap-6">
                     <a href="#what-you-get" class="text-sm text-gray-400 hover:text-neoncyan transition">What You Get</a>
                     <a href="#live-projects" class="text-sm text-gray-400 hover:text-neoncyan transition">Live Projects</a>
-                    <a href="#why-us" class="text-sm text-gray-400 hover:text-neoncyan transition">Why Us</a>
                     <button onclick="showBooking()" class="bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold py-2.5 px-6 rounded-full shadow-lg shadow-cyan-500/30 transition-all hover:scale-105 hover:shadow-cyan-500/50">
                         🪑 Grab Your Seat
                     </button>
@@ -219,9 +223,7 @@
                         <div class="text-left order-2 lg:order-1">
                             
                             <div class="animate-float">
-                                <span class="inline-block py-1.5 px-4 rounded-full bg-red-500/20 text-red-400 text-xs font-bold tracking-wide uppercase mb-4 border border-red-500/30 backdrop-blur-md">
-                                    <i class="fa-solid fa-fire text-[10px] mr-2 animate-pulse"></i> Only 12 Seats Left — Filling Fast!
-                                </span>
+                              
                                 
                                 <h1 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-orbitron font-bold mb-6 leading-tight drop-shadow-2xl">
                                     Stop Watching<br/> 
@@ -304,7 +306,7 @@
             <div class="max-w-4xl mx-auto text-center">
                 <span class="text-xs font-bold text-red-400 uppercase tracking-widest">The Hard Truth</span>
                 <h2 class="text-3xl md:text-5xl font-orbitron font-bold mt-4 mb-8">
-                    high potential but no exposer <span class="gradient-text-gold">Won't Get You Hired</span>
+                    high potential but no exposer <span class="gradient-text-gold">Won't Get You Innovator</span>
                 </h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left mt-10">
                     <div class="glass-panel p-6 rounded-xl border-l-4 border-l-red-500">
@@ -321,7 +323,7 @@
                             <i class="fa-solid fa-xmark text-red-500 text-xl mt-1"></i>
                             <div>
                                 <h4 class="font-bold text-white">No idea where to start</h4>
-                                <p class="text-gray-400 text-sm mt-1">Interviewers ask about production pipelines, not Iris datasets</p>
+                                <p class="text-gray-400 text-sm mt-1">Without structure, guidance, or a defined first step, progress feels overwhelming, and momentum never begins.</p>
                             </div>
                         </div>
                     </div>
@@ -367,11 +369,11 @@
                             <i class="fa-solid fa-laptop-code text-neoncyan text-3xl"></i>
                         </div>
                         <h3 class="text-2xl font-bold mb-3">Build Your Own Product</h3>
-                        <p class="text-gray-400 text-sm leading-relaxed mb-4">No toy datasets. Work on actual OCI, ODI, Data Science & Data Engineering projects that companies are paying for right now.</p>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-4">Turn your data science skills into something tangiblea deployed model, a live dashboard, a SaaS tool, a solution people can actually use.</p>
                         <ul class="space-y-2 text-sm text-gray-300">
-                            <li><i class="fa-solid fa-check text-green-400 mr-2"></i>OCI Cloud Infrastructure</li>
-                            <li><i class="fa-solid fa-check text-green-400 mr-2"></i>ODI Data Integration</li>
-                            <li><i class="fa-solid fa-check text-green-400 mr-2"></i>End-to-End Pipelines</li>
+                            <li><i class="fa-solid fa-xmark text-green-400 mr-2"></i>Stop learning in isolation.</li>
+                            <li><i class="fa-solid fa-xmark text-green-400 mr-2"></i>Stop collecting courses.</li>
+                            <li><i class="fa-solid fa-check text-green-400 mr-2"></i>Start shipping real products.</li>
                         </ul>
                     </div>
                     <div class="glass-panel p-8 rounded-2xl hover:border-purple-500/50 transition-all text-left group hover:-translate-y-3 duration-300 glow-hover">
@@ -379,7 +381,7 @@
                             <i class="fa-solid fa-users-gear text-neonpurple text-3xl"></i>
                         </div>
                         <h3 class="text-2xl font-bold mb-3">Expert Mentorship</h3>
-                        <p class="text-gray-400 text-sm leading-relaxed mb-4">Sit next to professionals who are already doing OCI, ODI, Data Science & Engineering daily. Ask questions. Get answers. Instantly.</p>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-4">Mentorship isn’t about answers. It’s about pattern recognition. Experts see failure modes before they happen. That’s years of trial-and-error you don’t have to repeat.</p>
                         <ul class="space-y-2 text-sm text-gray-300">
                             <li><i class="fa-solid fa-check text-green-400 mr-2"></i>1-on-1 Doubt Solving</li>
                             <li><i class="fa-solid fa-check text-green-400 mr-2"></i>Code Reviews</li>
@@ -392,11 +394,11 @@
                         </div>
                         <h3 class="text-2xl font-bold mb-3">Access of AI-Shark Tank
 </h3>
-                        <p class="text-gray-400 text-sm leading-relaxed mb-4">Walk out with a GitHub portfolio full of real projects. Not "Titanic prediction" — actual enterprise-grade work.</p>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-4">Present your product in front of mentors, founders, and industry experts who challenge assumptions and test real-world viability.</p>
                         <ul class="space-y-2 text-sm text-gray-300">
-                            <li><i class="fa-solid fa-check text-green-400 mr-2"></i>GitHub-Ready Projects</li>
-                            <li><i class="fa-solid fa-check text-green-400 mr-2"></i>Completion Certificate</li>
-                            <li><i class="fa-solid fa-check text-green-400 mr-2"></i>LinkedIn Recommendation</li>
+                            <li><i class="fa-solid fa-check text-green-400 mr-2"></i>You bring the innovation.</li>
+                            <li><i class="fa-solid fa-check text-green-400 mr-2"></i>Explore Funding & Growth Opportunities</li>
+                            <li><i class="fa-solid fa-check text-green-400 mr-2"></i>Get Expert & Industry Feedback</li>
                         </ul>
                     </div>
                 </div>
@@ -407,7 +409,7 @@
                             <i class="fa-solid fa-cloud text-green-400 text-3xl"></i>
                         </div>
                         <h3 class="text-2xl font-bold mb-3">Market Place </h3>
-                        <p class="text-gray-400 text-sm leading-relaxed">Free access to OCI cloud, databases, Jupyter notebooks, VS Code, and all the tools pros use daily.</p>
+                        <p class="text-gray-400 text-sm leading-relaxed">We provide a marketplace where innovators can showcase, sell, and scale their AI solutions.Your product doesn’t stay in a notebook. It reaches real users.Because innovation without distribution is just code.</p>
                     </div>
                     <div class="glass-panel p-8 rounded-2xl hover:border-pink-500/50 transition-all text-left group hover:-translate-y-3 duration-300 glow-hover">
                         <div class="w-16 h-16 bg-pink-900/30 rounded-2xl flex items-center justify-center mb-6 border border-pink-500/20 group-hover:scale-110 transition-transform">
@@ -619,9 +621,7 @@
         <section class="py-24 px-4 relative overflow-hidden">
             <div class="absolute inset-0 bg-gradient-to-r from-cyan-600/10 via-purple-600/10 to-cyan-600/10"></div>
             <div class="max-w-4xl mx-auto text-center relative z-10">
-                <div class="inline-block mb-6 px-4 py-2 bg-red-500/20 rounded-full border border-red-500/30">
-                    <span class="text-red-400 text-sm font-bold"><i class="fa-solid fa-clock mr-2 animate-pulse"></i>Limited Seats — Don't Wait Until Tomorrow</span>
-                </div>
+              
                 <h2 class="text-4xl md:text-6xl font-orbitron font-bold mb-6 leading-tight">
                     Your Future Self <br/>Will <span class="gradient-text">Thank You</span>
                 </h2>
@@ -765,7 +765,21 @@
                         </div>
                         <div>
                             <label class="block text-xs font-bold text-gray-400 uppercase mb-2">Start Time</label>
-                            <input type="time" id="time" required class="w-full px-4 py-3 rounded-lg text-sm">
+                            <select id="time" required class="w-full px-4 py-3 rounded-lg text-sm">
+                                <option value="" disabled selected>Select a time slot</option>
+                                <option value="08:00">08:00 AM</option>
+                                <option value="09:00">09:00 AM</option>
+                                <option value="10:00">10:00 AM</option>
+                                <option value="11:00">11:00 AM</option>
+                                <option value="12:00">12:00 PM</option>
+                                <option value="13:00">01:00 PM</option>
+                                <option value="14:00">02:00 PM</option>
+                                <option value="15:00">03:00 PM</option>
+                                <option value="16:00">04:00 PM</option>
+                                <option value="17:00">05:00 PM</option>
+                                <option value="18:00">06:00 PM</option>
+                                <option value="19:00">07:00 PM</option>
+                            </select>
                         </div>
                     </div>
                     <div class="mb-6">
@@ -808,6 +822,7 @@
         function showBooking() {
             homePage.style.display = 'none';
             bookingPage.style.display = 'block';
+            initializeBookingDefaults();
             window.scrollTo(0, 0);
         }
 
@@ -839,6 +854,20 @@
         function closeModal() {
             document.getElementById('success-modal').classList.add('hidden');
             showHome();
+        }
+
+        function initializeBookingDefaults() {
+            const dateInput = document.getElementById('date');
+            if (!dateInput) return;
+            const today = new Date();
+            const yyyy = today.getFullYear();
+            const mm = String(today.getMonth() + 1).padStart(2, '0');
+            const dd = String(today.getDate()).padStart(2, '0');
+            const minDate = `${yyyy}-${mm}-${dd}`;
+            dateInput.min = minDate;
+            if (!dateInput.value) {
+                dateInput.value = minDate;
+            }
         }
 
         // Three.js Shader Background
@@ -1025,7 +1054,10 @@
             animate();
         }
 
-        window.addEventListener('load', initDoodle);
+        window.addEventListener('load', () => {
+            initDoodle();
+            initializeBookingDefaults();
+        });
     </script>
 </body>
 </html>
