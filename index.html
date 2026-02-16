@@ -188,8 +188,8 @@
                     <span class="font-orbitron font-bold text-xl tracking-wider text-white">Data Science <span class="text-neoncyan">Co-Working Space</span></span>
                 </div>
                 <div class="hidden md:flex items-center gap-6">
-                    <a href="#what-you-get" class="text-sm text-gray-400 hover:text-neoncyan transition">What You Get</a>
-                    <a href="#live-projects" class="text-sm text-gray-400 hover:text-neoncyan transition">Live Projects</a>
+                    <a href="#what-you-get" onclick="goToSection(event, 'what-you-get')" class="text-sm text-gray-400 hover:text-neoncyan transition">What You Get</a>
+                    <a href="#live-projects" onclick="goToSection(event, 'live-projects')" class="text-sm text-gray-400 hover:text-neoncyan transition">Live Projects</a>
                     <button onclick="showBooking()" class="bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold py-2.5 px-6 rounded-full shadow-lg shadow-cyan-500/30 transition-all hover:scale-105 hover:shadow-cyan-500/50">
                         🪑 Grab Your Seat
                     </button>
@@ -830,6 +830,20 @@
             bookingPage.style.display = 'none';
             homePage.style.display = 'block';
             window.scrollTo(0, 0);
+        }
+
+        function goToSection(event, sectionId) {
+            event.preventDefault();
+            if (bookingPage.style.display !== 'none') {
+                showHome();
+                setTimeout(() => {
+                    const section = document.getElementById(sectionId);
+                    if (section) section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 50);
+                return;
+            }
+            const section = document.getElementById(sectionId);
+            if (section) section.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
 
         function handleBooking(e) {
