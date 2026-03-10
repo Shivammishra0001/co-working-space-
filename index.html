@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Science Co-Working Space</title>
-    
+    <script async src="https://platform.twitter.com/widgets.js"></script>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
@@ -245,7 +245,7 @@
 
                             <p class="mt-4 max-w-xl text-base md:text-lg text-gray-300 drop-shadow-md leading-relaxed">
                                Walk in with an idea. <span class="text-neoncyan font-semibold">Sit in a focused environment. </span> 
-                                %<span class="text-neonpurple font-semibold">Build your own AI / ML / Data product </span> 
+                                <span class="text-neonpurple font-semibold">Build your own AI / ML / Data product </span> 
                                 Walk out with something real.
                             </p>
 
@@ -322,7 +322,7 @@
             <div class="max-w-4xl mx-auto text-center">
                 <span class="text-xs font-bold text-red-400 uppercase tracking-widest">The Hard Truth</span>
                 <h2 class="text-3xl md:text-5xl font-orbitron font-bold mt-4 mb-8">
-                    high potential but no exposer <span class="gradient-text-gold">Won't Get You Innovator</span>
+                    high potential Without the    <span>  </span><span class="gradient-text-gold">Right Environment Never Becomes Innovation</span>
                 </h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left mt-10">
                     <div class="glass-panel p-6 rounded-xl border-l-4 border-l-red-500">
@@ -356,8 +356,8 @@
                         <div class="flex items-start gap-3">
                             <i class="fa-solid fa-xmark text-red-500 text-xl mt-1"></i>
                             <div>
-                                <h4 class="font-bold text-white">No access of market place</h4>
-                                <p class="text-gray-400 text-sm mt-1">Nothing to show that proves you can actually DO the work</p>
+                                <h4 class="font-bold text-white">No exposure to the real market</h4>
+                                <p class="text-gray-400 text-sm mt-1">You might learn skills, but without real projects and collaboration, there’s nothing to show that proves you can actually deliver real work.</p>
                             </div>
                         </div>
                     </div>
@@ -365,7 +365,7 @@
 
                 <div class="mt-12 glass-panel p-8 rounded-2xl border border-cyan-500/30">
                     <h3 class="text-2xl font-bold mb-2">What if you could <span class="gradient-text">fix all of this in one place?</span></h3>
-                    <p class="text-gray-400">Walk in. Sit down. Work on your own idea. Walk out with skills companies actually pay for.</p>
+                    <p class="text-gray-400">Walk in with an idea. Train models. Build solutions. Walk out ready for the real world.</p>
                 </div>
             </div>
         </section>
@@ -515,94 +515,23 @@
 <section id="community" class="py-24 px-4 bg-deepspace relative">
     <div class="max-w-7xl mx-auto">
 
-        <div class="text-center mb-16">
-            <span class="text-xs font-bold text-neoncyan uppercase tracking-widest">Ecosystem</span>
-            <h2 class="text-3xl md:text-5xl font-orbitron font-bold mt-4">
-                Our <span class="gradient-text">Builder Communities</span>
-            </h2>
-            <p class="text-gray-400 mt-4 max-w-2xl mx-auto">
-                Sit with people working across AI, Cloud, Data Engineering & Analytics.
-                Click a domain. Explore the tribe.
-            </p>
-        </div>
-
-        <!-- 3x6 Grid -->
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-
-            <!-- Card Template -->
-            <!-- Just duplicate pattern for all 18 -->
-
-            <div onclick="showCommunity('meta')" 
-                 class="community-card glass-panel rounded-2xl p-6 text-center cursor-pointer transition-all duration-300 glow-hover group">
-                <i class="fa-brands fa-meta text-3xl text-neoncyan mb-3 group-hover:scale-110 transition"></i>
-                <p class="text-sm font-semibold">Meta AI Circle</p>
-            </div>
-
-            <div onclick="showCommunity('gemini')" 
-                 class="community-card glass-panel rounded-2xl p-6 text-center cursor-pointer transition-all duration-300 glow-hover group">
-                <i class="fa-solid fa-robot text-3xl text-neonpurple mb-3 group-hover:scale-110 transition"></i>
-                <p class="text-sm font-semibold">Gemini Builders</p>
-            </div>
-
-            <div onclick="showCommunity('huggingface')" 
-                 class="community-card glass-panel rounded-2xl p-6 text-center cursor-pointer transition-all duration-300 glow-hover group">
-                <i class="fa-solid fa-brain text-3xl text-pink-400 mb-3 group-hover:scale-110 transition"></i>
-                <p class="text-sm font-semibold">HuggingFace Hub</p>
-            </div>
-
-            <div onclick="showCommunity('kafka')" class="community-card glass-panel rounded-2xl p-6 text-center cursor-pointer glow-hover">
-                <i class="fa-solid fa-stream text-3xl text-green-400 mb-3"></i>
-                <p class="text-sm font-semibold">Kafka Stream</p>
-            </div>
-
-            <div onclick="showCommunity('spark')" class="community-card glass-panel rounded-2xl p-6 text-center cursor-pointer glow-hover">
-                <i class="fa-solid fa-bolt text-3xl text-yellow-400 mb-3"></i>
-                <p class="text-sm font-semibold">Spark Engine</p>
-            </div>
-
-            <div onclick="showCommunity('mlops')" class="community-card glass-panel rounded-2xl p-6 text-center cursor-pointer glow-hover">
-                <i class="fa-solid fa-gears text-3xl text-cyan-400 mb-3"></i>
-                <p class="text-sm font-semibold">MLOps Circle</p>
-            </div>
-
-            <!-- Add 12 more same pattern -->
-            <div onclick="showCommunity('aws')" class="community-card glass-panel rounded-2xl p-6 text-center cursor-pointer glow-hover">
-                <i class="fa-brands fa-aws text-3xl text-orange-400 mb-3"></i>
-                <p class="text-sm font-semibold">AWS Data</p>
-            </div>
-
-            <div onclick="showCommunity('azure')" class="community-card glass-panel rounded-2xl p-6 text-center cursor-pointer glow-hover">
-                <i class="fa-brands fa-microsoft text-3xl text-blue-400 mb-3"></i>
-                <p class="text-sm font-semibold">Azure Data</p>
-            </div>
-
-            <div onclick="showCommunity('gcp')" class="community-card glass-panel rounded-2xl p-6 text-center cursor-pointer glow-hover">
-                <i class="fa-brands fa-google text-3xl text-red-400 mb-3"></i>
-                <p class="text-sm font-semibold">GCP Data</p>
-            </div>
-
-            <div onclick="showCommunity('powerbi')" class="community-card glass-panel rounded-2xl p-6 text-center cursor-pointer glow-hover">
-                <i class="fa-solid fa-chart-column text-3xl text-yellow-300 mb-3"></i>
-                <p class="text-sm font-semibold">Power BI</p>
-            </div>
-
-            <div onclick="showCommunity('tableau')" class="community-card glass-panel rounded-2xl p-6 text-center cursor-pointer glow-hover">
-                <i class="fa-solid fa-chart-line text-3xl text-purple-400 mb-3"></i>
-                <p class="text-sm font-semibold">Tableau</p>
-            </div>
-
-            <div onclick="showCommunity('startup')" class="community-card glass-panel rounded-2xl p-6 text-center cursor-pointer glow-hover">
-                <i class="fa-solid fa-rocket text-3xl text-pink-400 mb-3"></i>
-                <p class="text-sm font-semibold">AI Startup Hub</p>
-            </div>
-
-        </div>
+<!-- Grid Container -->
+<div id="communityGrid" 
+     class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+</div>
 
         <!-- Dynamic Info Panel -->
         <div id="communityContent" 
              class="mt-14 glass-panel rounded-2xl p-8 hidden border border-cyan-500/20 transition-all duration-500">
         </div>
 
+        <!-- Twitter Feed Display Area -->
+<div id="twitterFeed" class="mt-16 hidden">
+    <div class="glass-panel rounded-2xl p-6">
+        <h3 id="feedTitle" class="text-xl font-bold mb-4"></h3>
+        <div id="tweetContainer" class="flex justify-center"></div>
+    </div>
+</div>
     </div>
 </section>
 
@@ -1158,6 +1087,132 @@
             initDoodle();
             initializeBookingDefaults();
         });
-    </script>
+
+
+/* =========================================
+   COMMUNITY DATA LAYER
+   ========================================= */
+
+const communities = [
+  {
+    id: "openai",
+    name: "OpenAI",
+    handle: "OpenAI",
+    tagline: "Advancing safe artificial intelligence.",
+    logo: "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png"
+  },
+  {
+    id: "googleai",
+    name: "Google AI",
+    handle: "GoogleAIStudio",
+    tagline: "AI research and breakthroughs.",
+    logo: "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png"
+  },
+  {
+    id: "huggingface",
+    name: "Hugging Face",
+    handle: "huggingface",
+    tagline: "Open-source ML community.",
+    logo: "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png"
+  },
+  {
+    id: "nvidiaai",
+    name: "NVIDIA AI",
+    handle: "NVIDIAAI",
+    tagline: "Accelerated computing for AI.",
+    logo: "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png"
+  },
+    {
+    id: "Anthopi",
+    name: "Anthropic Ai",
+    handle: "anthropic claude ",
+    tagline: "AI research and breakthroughs.",
+    logo: "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png"
+  },
+    {
+    id: "sarvam ai",
+    name: "sarvam ai",
+    handle: "SarvamForDevs",
+    tagline: "AI research and breakthroughs.",
+    logo: "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png"
+  },
+    {
+    id: "Copilot Ai",
+    name: "Copilot Ai",
+    handle: "Copilot Ai",
+    tagline: "AI research and breakthroughs.",
+    logo: "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png"
+  },
+    {
+    id: "AI Factory",
+    name: "AI Factory",
+    handle: "    MindFactoryAI",
+    tagline: "AI research and breakthroughs.",
+    logo: "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png"
+  }
+  
+];
+
+
+/* =========================================
+   RENDER CARDS DYNAMICALLY
+   ========================================= */
+
+const grid = document.getElementById("communityGrid");
+
+communities.forEach(community => {
+
+  const card = document.createElement("div");
+
+  card.className =
+    "community-card glass-panel rounded-2xl p-6 text-center cursor-pointer transition-all duration-300 glow-hover group";
+
+  card.innerHTML = `
+      <img src="https://unavatar.io/twitter/${community.handle}" 
+           alt="${community.name} logo"
+           class="w-14 h-14 mx-auto rounded-full mb-3 group-hover:scale-110 transition" />
+      <p class="text-sm font-semibold">${community.name}</p>
+      <p class="text-xs text-gray-400 mt-1">${community.tagline}</p>
+  `;
+
+  card.onclick = () => loadTwitterFeed(community);
+
+  grid.appendChild(card);
+});
+
+
+/* =========================================
+   LOAD TWITTER FEED
+   ========================================= */
+
+function loadTwitterFeed(community) {
+
+  const feedSection = document.getElementById("twitterFeed");
+  const container = document.getElementById("tweetContainer");
+  const title = document.getElementById("feedTitle");
+
+  container.innerHTML = ""; // clear previous
+  feedSection.classList.remove("hidden");
+
+  title.textContent = community.name + " Latest Updates";
+
+  // Create Twitter embed
+  const anchor = document.createElement("a");
+  anchor.setAttribute("class", "twitter-timeline");
+  anchor.setAttribute("data-theme", "dark");
+  anchor.setAttribute("data-height", "500");
+  anchor.setAttribute("href", `https://twitter.com/${community.handle}`);
+
+  container.appendChild(anchor);
+
+  // Reload Twitter widgets
+  if (window.twttr) {
+    window.twttr.widgets.load();
+  }
+
+  feedSection.scrollIntoView({ behavior: "smooth" });
+}
+
+</script>
 </body>
 </html>
